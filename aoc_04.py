@@ -46,7 +46,7 @@ def sum_board(board: list[list[int or None]]) -> int:
 
 if __name__ == '__main__':
     # part 1
-    boards = parse_boards('aoc_4_boards.txt')
+    boards = parse_boards('aoc_04_boards.txt')
 
     found = False
     for n in input:
@@ -60,7 +60,7 @@ if __name__ == '__main__':
             break
 
     # part 2
-    boards = parse_boards('aoc_4_boards.txt')
+    boards = parse_boards('aoc_04_boards.txt')
     solved = [False] * len(boards)
 
     result = None
