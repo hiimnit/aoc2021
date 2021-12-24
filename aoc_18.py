@@ -262,4 +262,13 @@ if __name__ == '__main__':
     print('result=', sn.get_magnitude())
 
     # part 2
-    pass
+    best = None
+    for i, sn in enumerate(input):
+        for j, other in enumerate(input):
+            sum = SnailfishNumber.parse(sn) + SnailfishNumber.parse(other)
+            magnitude = sum.get_magnitude()
+            if not best or magnitude > best:
+                best = magnitude
+
+    print('result=', best)
+
